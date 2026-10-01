@@ -10,6 +10,12 @@
   --accent: #1d4ed8;
   --accent-fg: #ffffff;
   --focus: #1d4ed8;
+
+  --code-keyword: #7b3fb3;
+  --code-string: #0b5cad;
+  --code-function: #0a6e3e;
+  --code-property: #8a4b00;
+  --code-comment: #5f6b76;
 }
 
 [data-theme="dark"] {
@@ -23,6 +29,12 @@
   --accent: #93c5fd;
   --accent-fg: #0b1120;
   --focus: #93c5fd;
+
+  --code-keyword: #c586c0;
+  --code-string: #ce9178;
+  --code-function: #dcdcaa;
+  --code-property: #9cdcfe;
+  --code-comment: #6a9955;
 }
 
 @theme inline {
@@ -34,4 +46,9 @@
   --color-accent: var(--accent);
   --color-accent-fg: var(--accent-fg);
   --color-focus: var(--focus);
+  --color-code-keyword: var(--code-keyword);
+  --color-code-string: var(--code-string);
+  --color-code-function: var(--code-function);
+  --color-code-property: var(--code-property);
+  --color-code-comment: var(--code-comment);
 }
