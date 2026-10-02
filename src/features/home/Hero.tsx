@@ -11,13 +11,13 @@ export function Hero() {
           Ashan Shashika
         </p>
         <p className="text-muted">Slough, United Kingdom</p>
-        <p className="mt-4 inline-flex items-center gap-2 rounded-full border border-border bg-surface px-3 py-1 text-sm font-medium text-fg">
+        {/* <p className="mt-4 inline-flex items-center gap-2 rounded-full border border-border bg-surface px-3 py-1 text-sm font-medium text-fg">
           <span
             aria-hidden="true"
             className="size-2 rounded-full bg-accent"
           />
           Open to senior roles
-        </p>
+        </p> */}
 
         <h1
           id="hero-title"
