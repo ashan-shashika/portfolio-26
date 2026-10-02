@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import type { KeyboardEvent } from "react";
+import { links } from "@/content/site";
 import { ThemeToggle } from "@/features/theme";
 
 type NavLink = { label: string; href: string; external?: boolean };
@@ -8,7 +9,7 @@ const NAV_LINKS: NavLink[] = [
   { label: "Work", href: "#work" },
   { label: "About", href: "#about" },
   { label: "Contact", href: "#contact" },
-  { label: "GitHub", href: "https://github.com/", external: true },
+  { label: "GitHub", href: links.github, external: true },
 ];
 
 const linkClass =
