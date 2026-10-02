@@ -21,7 +21,10 @@ interface TimelineCardProps {
   typeLabel: string;
 }
 
-export function TimelineCard({ entry, typeLabel }: TimelineCardProps) {
+export function TimelineCard({
+  entry,
+  typeLabel,
+}: TimelineCardProps) {
   const [isOpen, setIsOpen] = useState(false);
   const detailsId = `timeline-${entry.id}-details`;
   const hasDetails = Boolean(
@@ -58,7 +61,9 @@ export function TimelineCard({ entry, typeLabel }: TimelineCardProps) {
       >
         {entry.title}
       </h3>
-      <p className="text-sm text-muted sm:text-base">{entry.organization}</p>
+      <p className="text-sm text-muted sm:text-base">
+        {entry.organization}
+      </p>
 
       {entry.highlight && (
         <p className="mt-3 inline-flex rounded-full border border-accent px-2.5 py-0.5 text-xs font-medium text-accent">
@@ -66,7 +71,9 @@ export function TimelineCard({ entry, typeLabel }: TimelineCardProps) {
         </p>
       )}
 
-      <p className="mt-3 text-sm text-pretty text-fg">{entry.description}</p>
+      <p className="mt-3 text-sm text-pretty text-fg">
+        {entry.description}
+      </p>
 
       {entry.technologies && entry.technologies.length > 0 && (
         <div className="mt-4">
@@ -76,7 +83,7 @@ export function TimelineCard({ entry, typeLabel }: TimelineCardProps) {
 
       {hasDetails && (
         <>
-          <button
+          {/* <button
             type="button"
             onClick={() => setIsOpen((open) => !open)}
             aria-expanded={isOpen}
@@ -88,7 +95,7 @@ export function TimelineCard({ entry, typeLabel }: TimelineCardProps) {
               {isOpen ? "−" : "+"}
             </span>
             <span className="sr-only"> for {entry.title}</span>
-          </button>
+          </button> */}
 
           <div
             id={detailsId}
@@ -100,13 +107,14 @@ export function TimelineCard({ entry, typeLabel }: TimelineCardProps) {
             }`}
           >
             <div className="grid gap-4 overflow-hidden">
-              {entry.achievements && entry.achievements.length > 0 && (
-                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-fg marker:text-muted">
-                  {entry.achievements.map((achievement) => (
-                    <li key={achievement}>{achievement}</li>
-                  ))}
-                </ul>
-              )}
+              {entry.achievements &&
+                entry.achievements.length > 0 && (
+                  <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-fg marker:text-muted">
+                    {entry.achievements.map((achievement) => (
+                      <li key={achievement}>{achievement}</li>
+                    ))}
+                  </ul>
+                )}
               {entry.details?.map((group) => (
                 <div key={group.label} className="mt-2">
                   <p className="mb-2 text-xs font-medium tracking-[0.2em] text-muted uppercase">

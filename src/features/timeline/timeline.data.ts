@@ -1,7 +1,5 @@
 import type { TimelineEntry } from "./types";
 
-// Add, remove or reorder entries here. The timeline renders them top to bottom
-// and alternates sides automatically.
 export const careerTimeline: TimelineEntry[] = [
   {
     id: "2016-bsc",
@@ -10,8 +8,8 @@ export const careerTimeline: TimelineEntry[] = [
     title: "BSc",
     organization: "University of Ruhuna, Sri Lanka",
     description:
-      "Graduated with a multidisciplinary background combining Applied Mathematics, Bio-Mathematics and Computer Science.",
-    technologies: ["Mathematics", "Computer Science", "Statistics", "Algorithms"],
+      "Graduated with a multidisciplinary background combining Applied Mathematics, Pure Mathematics and Computer Science.",
+    technologies: ["Mathematics", "Computer Science"],
     details: [
       {
         label: "Relevant areas",
@@ -134,11 +132,9 @@ export const careerTimeline: TimelineEntry[] = [
       "Python",
       "Pandas",
       "Scikit-learn",
-      "XGBoost",
-      "Random Forest",
+      "TensorFlow",
+      "Keras",
       "SHAP",
-      "FRED",
-      "Yahoo Finance",
     ],
     details: [
       {
@@ -152,8 +148,8 @@ export const careerTimeline: TimelineEntry[] = [
         ],
       },
     ],
-    // TODO: set to the project URL to show the "View project" link
-    link: null,
+
+    link: `https://github.com/ashan-shashika/macroeconomic-impact-stock-ml`,
     linkLabel: "View project",
   },
   {

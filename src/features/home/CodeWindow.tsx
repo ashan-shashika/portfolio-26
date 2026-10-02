@@ -27,7 +27,7 @@ export function CodeWindow() {
   return (
     <div
       role="img"
-      aria-label="Code editor showing a TypeScript file that describes Ashan Shashika, a full-stack developer working with React, TypeScript, GraphQL and AWS"
+      aria-label="Code editor showing a TypeScript file that describes Ashan Shashika, a full-stack developer working with TypeScript, Python, React, Next.js, Node.js, GraphQL, MySQL, Elasticsearch, AWS and Docker"
       className="mx-auto w-full max-w-md overflow-hidden rounded-xl border border-border bg-bg shadow-xl md:max-w-none"
     >
       <div className="flex items-center gap-2 border-b border-border bg-surface px-4 py-3">
@@ -61,17 +61,30 @@ export function CodeWindow() {
           </Line>
           <Line>
             {"  "}
-            <Prop>stack</Prop>: [
+            <Prop>stack</Prop>: {"{"}
           </Line>
           <Line>
             {"    "}
-            <Str>"React"</Str>, <Str>"TypeScript"</Str>,
+            <Prop>languages</Prop>: [<Str>"TypeScript"</Str>,{" "}
+            <Str>"Python"</Str>],
           </Line>
           <Line>
             {"    "}
-            <Str>"GraphQL"</Str>, <Str>"AWS"</Str>,
+            <Prop>frontend</Prop>: [<Str>"React"</Str>, <Str>"Next.js"</Str>],
           </Line>
-          <Line>{"  ],"}</Line>
+          <Line>
+            {"    "}
+            <Prop>backend</Prop>: [<Str>"Node.js"</Str>, <Str>"GraphQL"</Str>],
+          </Line>
+          <Line>
+            {"    "}
+            <Prop>data</Prop>: [<Str>"MySQL"</Str>, <Str>"Elasticsearch"</Str>],
+          </Line>
+          <Line>
+            {"    "}
+            <Prop>cloud</Prop>: [<Str>"AWS"</Str>, <Str>"Docker"</Str>],
+          </Line>
+          <Line>{"  },"}</Line>
           <Line>{"};"}</Line>
           <Line />
           <Line>
