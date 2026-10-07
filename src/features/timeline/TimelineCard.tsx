@@ -25,7 +25,8 @@ export function TimelineCard({
   entry,
   typeLabel,
 }: TimelineCardProps) {
-  const [isOpen, setIsOpen] = useState(false);
+  // TODO: restore `setIsOpen` with the "View details" button below
+  const [isOpen] = useState(false);
   const detailsId = `timeline-${entry.id}-details`;
   const hasDetails = Boolean(
     entry.achievements?.length || entry.details?.length,

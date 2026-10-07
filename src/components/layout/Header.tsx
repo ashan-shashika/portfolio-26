@@ -90,7 +90,7 @@ export function Header() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-3">
         <a
-          href="/"
+          href={import.meta.env.BASE_URL}
           className="inline-flex min-h-11 items-center gap-2 rounded-md text-lg font-semibold text-fg"
         >
           <span
