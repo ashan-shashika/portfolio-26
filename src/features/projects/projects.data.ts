@@ -18,7 +18,7 @@ const macroOptuna = `${macroRaw}/model_XGBoost/optuna_optimization_history.png`;
 const macroTimeseries = `${macroRaw}/eda/03_macro_timeseries_panel.png`;
 
 const nnRaw =
-  "https://raw.githubusercontent.com/ashan-shashika/ashan-shashika.github.io/master/images";
+  "https://raw.githubusercontent.com/ashan-shashika/neural_network/master/images";
 
 const nnArchitecture = `${nnRaw}/nn.png`;
 const nnDecisionBoundary = `${nnRaw}/decision_boundary.png`;
@@ -226,7 +226,7 @@ export const projects: Project[] = [
         caption: "Training data",
       },
     ],
-    live: "https://ashan-shashika.github.io/",
-    repo: `${links.github}/ashan-shashika.github.io`,
+    live: "https://ashan-shashika.github.io/neural_network/",
+    repo: `${links.github}/neural_network`,
   },
 ];

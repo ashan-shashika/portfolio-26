@@ -25,13 +25,12 @@ export function TimelineCard({
   entry,
   typeLabel,
 }: TimelineCardProps) {
-  // TODO: restore `setIsOpen` with the "View details" button below
   const [isOpen] = useState(false);
   const detailsId = `timeline-${entry.id}-details`;
   const hasDetails = Boolean(
     entry.achievements?.length || entry.details?.length,
   );
-  const isExternal = entry.link?.startsWith("http");
+  // const isExternal = entry.link?.startsWith("http");
 
   return (
     <article
@@ -129,11 +128,11 @@ export function TimelineCard({
         </>
       )}
 
-      {entry.link && (
+      {/* {entry.link && (
         <a
           href={entry.link}
           className="mt-2 inline-flex min-h-11 items-center gap-1.5 rounded-md text-sm font-medium text-accent underline underline-offset-4 hover:decoration-2"
-          {...(isExternal && { target: "_blank", rel: "noreferrer" })}
+          target="_blank"
         >
           {entry.linkLabel ?? "View project"}
           <span aria-hidden="true">→</span>
@@ -142,7 +141,7 @@ export function TimelineCard({
             {isExternal && " (opens in a new tab)"}
           </span>
         </a>
-      )}
+      )} */}
     </article>
   );
 }
