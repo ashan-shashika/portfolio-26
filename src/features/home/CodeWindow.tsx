@@ -70,19 +70,23 @@ export function CodeWindow() {
           </Line>
           <Line>
             {"    "}
-            <Prop>frontend</Prop>: [<Str>"React"</Str>, <Str>"Next.js"</Str>],
+            <Prop>frontend</Prop>: [<Str>"React"</Str>,{" "}
+            <Str>"Next.js"</Str>],
           </Line>
           <Line>
             {"    "}
-            <Prop>backend</Prop>: [<Str>"Node.js"</Str>, <Str>"GraphQL"</Str>],
+            <Prop>backend</Prop>: [<Str>"Node.js"</Str>,{" "}
+            <Str>".NET"</Str>, <Str>"GraphQL"</Str>],
           </Line>
           <Line>
             {"    "}
-            <Prop>data</Prop>: [<Str>"MySQL"</Str>, <Str>"Elasticsearch"</Str>],
+            <Prop>data</Prop>: [<Str>"MySQL"</Str>,{" "}
+            <Str>"Elasticsearch"</Str>],
           </Line>
           <Line>
             {"    "}
-            <Prop>cloud</Prop>: [<Str>"AWS"</Str>, <Str>"Docker"</Str>],
+            <Prop>cloud</Prop>: [<Str>"AWS"</Str>, <Str>"Docker"</Str>
+            ],
           </Line>
           <Line>{"  },"}</Line>
           <Line>{"};"}</Line>
